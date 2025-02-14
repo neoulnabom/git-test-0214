@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1개의 이미지를 여러곳으로 링크걸기</h1>
+    <img src="../img/jeju.png" usemap="#jeju_map"/>
+
+    <pre>
+        여러곳으로 링크 걸기
+        map, area 태그를 이용하여 링크정보를 기술한다.
+        map태그는 페이지 마지막 내용으로 표시를 해야 레이아웃에 문제가 발생하지 않는다.
+    <!--왼쪽에서 오른쪽으로 향하는게 x 좌표, 상단에서 하단으로 향하는게 y 좌표-->
+
+    shape : rect(사각형), circle(원모양), poly(다각형)
+    coords : 좌표
+    </pre>
+
+    <map name="jeju_map">
+    <!-- rect : 사각형 모양 링크 걸기기 coords="x1,y1<-좌상단 값,x2,y2<-우하단 값"-->
+    <area shape = "rect" coords = "333,64,417,155" href="https://www.jeju.go.kr/" target = "_blank"/>
+    <!--circle : 원모양 링크 걸기 coords="x, y, 원하는 지점 r" 지점에서 원하는 지점까지 원을 그렸을 때 반지름 값 -->
+    <area shape = "circle" coords = "470,280,50" href="https://jeju.go.kr/hallasan/index.htm" target="_blank"/>
+    <!-- poly : 다각형 링크 걸기 coords="x,y,x,y,x,y,x,y,......." 원하는 지점 개수만큼 좌표를 구해야 함, 입력할 때 한쪽 방향으로만 입력할것!-->
+     <area shape = "poly" coords = "100, 200, 200, 250, 120, 300, 50, 270" href = "index.html" target = "_blank"/>
+    </map>
+
+</body>
+</html>

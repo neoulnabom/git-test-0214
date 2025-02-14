@@ -1,0 +1,42 @@
+.container {
+    width : 300px;
+    height : 280px;
+    border : none;
+    background-color : #fff;
+    padding : 0px 15px;
+    margin : 0 auto;
+}
+
+h2 {
+    text-align : center;
+    font-size : 30px;
+    font-weight : bold;
+}
+
+input {
+    width : 300px;
+    height : 40px;
+    margin-bottom : 10px;
+    background-color : #fff;
+    border : 1px solid gray;
+    padding-left : 10px;
+    box-sizing : border-box;
+}
+
+button[type="submit"]{
+    width : 300px;
+    height : 40px;
+    color : white;
+    background-color : blue;
+}
+
+.a{
+    height : 20px;
+    text-align: left;
+
+}
+
+.find{
+    height : 40px;
+    text-align: right;
+}
